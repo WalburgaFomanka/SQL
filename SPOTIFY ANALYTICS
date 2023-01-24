@@ -46,3 +46,9 @@ select artist_name,track_name,loudness,
 from BIT_DB.Spotifydata
 order by loudness
 limit 1
+
+# Determined which artist released the longest song by duration
+select artist_name,track_name,duration_ms,
+from BIT_DB.Spotifydata
+order by duration_ms
+limit 1
