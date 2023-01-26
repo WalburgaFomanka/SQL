@@ -1,0 +1,29 @@
+In this SQL, I'm modifyting a table by updating, altering, and deleting information. Before modifying the table, I make sure to select all so to know exactly what to modify. Also I dropped the table. This was done on seperate databades.
+
+# I corrected the author's name 
+select * from documents;
+update documents set author = 'Jackie Draper' where author = 'Jakie Paper';
+
+#Delete row where title is "Things I'm afraid of"
+select * from documents;
+delete from documents where id = 5;
+select * from documents;
+
+TABLE 2
+#I decided to add price column to the table
+select * from clothes;
+alter table clothes add column price text;
+
+#updated item 1 = 10 dollars, item 2 = 20 daollars, item 3 = 30 dollars
+select * from clothes;
+update clothes set price = "10 dollars"
+where id = 1;
+update clothes set price = "20 dollars"
+where id = 2;
+update clothes set price = "30 dollars"
+where id = 3;
+select * from clothes;
+
+#Finally, I dropped the table
+drop table clothes;
+select * from clothes;
